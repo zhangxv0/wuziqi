@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace wuziqi
 {
     public partial class Form1 : Form
@@ -19,6 +19,10 @@ namespace wuziqi
         static bool type;
         //是否开始
         static bool start;
+        //游戏步骤的保存
+        List<List<int>> youxibuzhou = new List<List<int>> { };
+
+        List<MouseEventArgs> mouseEventArgs = new List<MouseEventArgs> { };
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +58,8 @@ namespace wuziqi
                 //在计算矩阵中的位置
                 int bX = (int)((e.X + MainSize.CBGap / 2) / MainSize.CBGap);
                 int bY = (int)((e.Y + MainSize.CBGap / 2) / MainSize.CBGap);
+                youxibuzhou.Add(new List<int> { bX, bY });
+                mouseEventArgs.Add(e);
                 //防止在同一个位置落子
                 if (ChessBack[bX, bY] != 0)
                     return;
@@ -200,6 +206,22 @@ namespace wuziqi
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void 游戏步骤ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GameSteps gameSteps = new GameSteps(youxibuzhou);
+            gameSteps.ShowDialog();
+        }
+
+        private void 保存ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("功能待开发");
+        }
+
+        private void 读取ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

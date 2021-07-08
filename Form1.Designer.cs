@@ -60,7 +60,7 @@ namespace wuziqi
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 503);
+            this.label1.Location = new System.Drawing.Point(427, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
@@ -77,7 +77,7 @@ namespace wuziqi
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(512, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(594, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -96,32 +96,35 @@ namespace wuziqi
             // 开始游戏ToolStripMenuItem
             // 
             this.开始游戏ToolStripMenuItem.Name = "开始游戏ToolStripMenuItem";
-            this.开始游戏ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.开始游戏ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.开始游戏ToolStripMenuItem.Text = "开始游戏";
             this.开始游戏ToolStripMenuItem.Click += new System.EventHandler(this.开始游戏ToolStripMenuItem_Click);
             // 
             // 游戏步骤ToolStripMenuItem
             // 
             this.游戏步骤ToolStripMenuItem.Name = "游戏步骤ToolStripMenuItem";
-            this.游戏步骤ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.游戏步骤ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.游戏步骤ToolStripMenuItem.Text = "游戏步骤";
+            this.游戏步骤ToolStripMenuItem.Click += new System.EventHandler(this.游戏步骤ToolStripMenuItem_Click);
             // 
             // 保存ToolStripMenuItem
             // 
             this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
-            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.保存ToolStripMenuItem.Text = "保存";
+            this.保存ToolStripMenuItem.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
             // 
             // 读取ToolStripMenuItem
             // 
             this.读取ToolStripMenuItem.Name = "读取ToolStripMenuItem";
-            this.读取ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.读取ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.读取ToolStripMenuItem.Text = "读取";
+            this.读取ToolStripMenuItem.Click += new System.EventHandler(this.读取ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -150,7 +153,7 @@ namespace wuziqi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 522);
+            this.ClientSize = new System.Drawing.Size(594, 522);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
